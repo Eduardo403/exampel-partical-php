@@ -1,7 +1,7 @@
+@extends('layouts.app')
+@section('title','abaut')
+@section('meta-description-default','abaut description')
 
-<body>
-@include('partials.navigation')
-
-    <h1>abaut</h1>
-</body>
-
+@section('content')
+<h1>abaut</h1>
+@endsection
