@@ -6,6 +6,6 @@
 @section('content')
 <h1>blog</h1>
 @foreach ($posts as $post )
-<h2>{{ $post->title }}</h2>
+<a href="/{{ route(posts.show) $post->id }}">{{ $post->title }}</a>
 @endforeach
 @endsection

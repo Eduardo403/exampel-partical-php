@@ -11,7 +11,12 @@ class PostController extends Controller
         $posts= Post::get();
 
 
-return view('blog',['posts'=>$posts]);
+return view('posts.index',['posts'=>$posts]);
+    }
+    public function show($id)
+    {
+        $post= Post::findOrFail($id);
+        return view("posts.show",['post'=>$post]);
     }
 
 }
