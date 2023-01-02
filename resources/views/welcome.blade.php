@@ -10,6 +10,6 @@
     <h1>home</h1>
 @endcomponent--}}
 <x-layouts title="home">
-
+<x-navigation/>
     <h1>home</h1>
 </x-layouts>
