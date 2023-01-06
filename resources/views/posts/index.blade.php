@@ -5,7 +5,15 @@
 
 @section('content')
 <h1>blog</h1>
+
+<a href="{{ route('posts.create') }}">Create new post</a>
+<br>
 @foreach ($posts as $post )
-<a href="/{{ route(posts.show) $post->id }}">{{ $post->title }}</a>
+<div>
+<a href="{{ route('posts.show',$post->id ) }} ">{{ $post->title }}</a>
+ <br>
+ <a href="{{ route('posts.edit',$post) }}">Edit</a>
+</div>
+
 @endforeach
 @endsection

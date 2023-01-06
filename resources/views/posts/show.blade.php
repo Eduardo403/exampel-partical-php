@@ -6,8 +6,11 @@
 @section('content')
 
 <h1>{{ $post->title }}</h1>
-<p>{{ $post->description }}</p>
+<br>
+<p>{{ $post->descrintion }}</p>
+<br>
 <span>{{ $post->price }}</span>
+<br>
 <a href="{{ route('posts.index') }}">regresar</a>
-@endforeach
+
 @endsection

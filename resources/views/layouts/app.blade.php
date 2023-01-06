@@ -5,17 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="meta-description" content="@yield('meta-description-default')">
         <title>@yield('title')</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-
-
-
-
-    </head>
+<link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
   <body>
 @include('partials.navigation')
+@if (session('status'))
+    <div class="status">
+
+        {{ session ('status')}}
+
+    </div>
+@endif
 @yield('content')
   </body>
 </html>
